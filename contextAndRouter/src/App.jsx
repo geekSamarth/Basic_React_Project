@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import home from "./pages/home";
-import about from "./pages/about";
-import project from "./pages/project";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Project from "./pages/Project";
 import { useState, createContext } from "react";
 
 export const AppContext = createContext();
@@ -24,9 +24,9 @@ function App() {
             </Link>
           </div>
           <Routes>
-            <Route path="/" Component={home} />
-            <Route path="/about" Component={about} />
-            <Route path="/project" Component={project} />
+            <Route path="/" component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/project" component={Project} />
             <Route path="*" element={<h1>The page is not found. </h1>} />
           </Routes>
         </Router>

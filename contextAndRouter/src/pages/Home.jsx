@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { AppContext } from '../App'
 
-function home() {
+function Home() {
   const {username} =useContext(AppContext);
   return (
     <div className='w-full h-screen bg-gray-100'>
@@ -10,4 +10,4 @@ function home() {
   )
 }
 
-export default home
+export default Home
