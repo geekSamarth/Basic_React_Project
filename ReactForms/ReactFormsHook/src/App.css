@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.form{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkgray;
+
+}
+form{
+  display: flex;
+  flex-direction: column;
+}
+form input{
+  width: 25vw;
+  padding: 1em;
+  margin: 1em;
+  outline: none;
+}
+p{
+  text-align: right;
+  color: red;
+}
